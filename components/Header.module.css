@@ -1,0 +1,69 @@
+
+
+
+.StyledHeader {
+    background-color: #222;
+    padding: 0;
+  }
+
+  
+.Logo {
+  color: red;
+  text-decoration: none;
+  position: relative;
+  z-index: 3;
+}
+
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.StyledNav {
+  gap: 15px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 70px 20px 20px;
+  background-color: #222;
+}
+
+.NavLink {
+  display: block;
+  color: red;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.NavButton {
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .StyledNav {
+      display: flex;
+    position: static;
+    padding: 0;
+    }
+  
+    .NavLink {
+      padding: 0;
+    }
+  
+    .NavButton {
+      display: none; 
+    }
+   
+  }

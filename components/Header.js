@@ -1,14 +1,15 @@
 import Link from "next/link";
 import styled from "styled-components";
 import Center from "./Center";
-
+import styles from './Header.module.css';
+/** 
 const StyledHeader = styled.header`
   background-color: #222;
   padding: 0;
 `;
 
 const Logo = styled(Link)`
-  color: #fff;
+  color: var(--primary-color);
   text-decoration: none;
   position: relative;
   z-index: 3;
@@ -41,7 +42,7 @@ const StyledNav = styled.nav`
 
 const NavLink = styled(Link)`
   display: block;
-  color: #aaa;
+  color: var(--primary-color);
   text-decoration: none;
   padding: 10px 0;
 
@@ -64,21 +65,20 @@ const NavButton = styled.button`
   }
 `;
 
+*/
 export default function Header() {
   return (
-    <StyledHeader>
+    <div className= {styles.StyledHeader}>
       <Center>
-        <Wrapper>
-          <Logo href={"/"}> Ecommerce</Logo>
-          <StyledNav>
-            <NavLink href={"/"}>Home</NavLink>
-            <NavLink href={"/products"}>All products</NavLink>
-            <NavLink href={"/categories"}>Categories</NavLink>
-            <NavLink href={"/account"}>Account</NavLink>
-            <NavLink href={"/cart"}>Cart</NavLink>
-          </StyledNav>
-        </Wrapper>
+        <div className={styles.Wrapper}>
+          <div className={styles.Logo} href={"/"}> Pridwen </div>
+          <div className={styles.StyledNav}>
+            <Link className={styles.NavLink} href={"/"}>Home</Link>
+            <Link className={styles.NavLink} href={"/projects"}>Projects</Link>
+           
+          </div>
+        </div>
       </Center>
-    </StyledHeader>
+    </div>
   );
 }

@@ -29,19 +29,25 @@ export default function Home() {
       <div className={styles.bigImage}>
         <div className={styles.overlay}></div>
         <div className={styles.wrapper}>
-          <h2 className={styles.slogan}>Crafting Spaces, Building Memories</h2>
+          <div>
+            <h2 className={styles.slogan}>
+              Crafting Spaces, Building Memories
+            </h2>
 
-          <h2 className={styles.slogan2}>Where Vision Meets Reality</h2>
+            <h2 className={styles.slogan2}>Where Vision Meets Reality</h2>
+            <div className={styles.buttonCenter}>
+              <button> CLICK ME</button>
+            </div>
+          </div>
         </div>
       </div>
       <div>
-        <h2 className={styles.projectHeader}> Explore our Projects</h2>
+        <h2 className={styles.projectHeader}> Recent Projects</h2>
 
         <div className={styles.projectsGrid}>
           {projects.map((project) => (
             <ProjectItem
               key={project.name}
-            
               image={project.image}
               name={project.name}
             />
@@ -49,7 +55,6 @@ export default function Home() {
         </div>
       </div>
       <Footer />
-      
     </div>
   );
 }

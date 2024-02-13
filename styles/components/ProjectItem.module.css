@@ -1,0 +1,30 @@
+.wrapper {
+  min-height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.wrapper:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+
+}
+
+.projectImage {
+  height: 200px;
+  width: 100%;
+}
+
+.wrapperName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectName {
+  margin-top: 30px;
+}

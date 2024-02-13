@@ -43,4 +43,18 @@
   margin-bottom: 10px; 
 }
 
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted */
+  grid-gap: 0px;
+  width: 85%; /* Adjust max-width if needed */
+  margin: 0 auto; /* Center the grid */
+ 
+}
 
+
+.projectHeader {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}

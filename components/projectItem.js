@@ -1,0 +1,21 @@
+import React from "react";
+import Link from "next/link";
+
+
+import styles from "../styles/components/ProjectItem.module.css";
+
+const ProjectItem = ({ image, name }) => {
+  return (
+    <Link href={`/projects/${name}`} className={styles.wrapper}>
+   
+        <img className={styles.projectImage} src={image} alt="Project" />
+        <div className={styles.wrapperName}>
+        <h3 className={styles.projectName}>{name}</h3>
+        </div>
+      
+    
+    </Link>
+  );
+};
+
+export default ProjectItem;

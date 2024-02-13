@@ -1,16 +1,14 @@
 .center {
-  margin: 0 auto; 
-  padding: 0 20px; 
+  margin: 0 auto;
+  padding: 0 20px;
   width: 80%;
 }
 
-
 .StyledHeader {
-    background-color: #222;
-    padding: 0;
-  }
+  background-color: #222;
+  padding: 0;
+}
 
-  
 .Logo {
   color: var(--primary-color);
   text-decoration: none;
@@ -53,22 +51,18 @@
   z-index: 3;
 }
 
-
-
-
 @media screen and (min-width: 768px) {
-    .StyledNav {
-      display: flex;
+  .StyledNav {
+    display: flex;
     position: static;
     padding: 0;
-    }
-  
-    .NavLink {
-      padding: 0;
-    }
-  
-    .NavButton {
-      display: none; 
-    }
-   
   }
+
+  .NavLink {
+    padding: 0;
+  }
+
+  .NavButton {
+    display: none;
+  }
+}

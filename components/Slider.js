@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+
+
+import React, { useState } from "react";
+import Image from "next/image";
 
 const Slider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,7 +20,13 @@ const Slider = ({ images }) => {
 
   return (
     <div className="slider">
-      <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+      <Image
+        src={images[currentIndex]}
+        alt={`Image ${currentIndex + 1}`}
+        width={500} // Desired width of the image
+        height={300}
+      />
+
       <button onClick={goToPrevious}>Previous</button>
       <button onClick={goToNext}>Next</button>
     </div>
@@ -25,3 +34,4 @@ const Slider = ({ images }) => {
 };
 
 export default Slider;
+

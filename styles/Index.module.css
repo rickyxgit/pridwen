@@ -34,7 +34,6 @@
 .slogan2 {
     color:white;
     font-size: 1.8em;
-
     position: relative;
     text-align: center; 
     margin-bottom: 10px; 
@@ -46,17 +45,88 @@
   grid-gap: 10px;
   width: 85%; /* Adjust max-width if needed */
   margin: 0 auto; /* Center the grid */
- 
+  
 }
 
 .projectHeader {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-align: center;
+  font-size: 2em;
+  color: var(--secondary-color);
 }
 
 .buttonCenter {
   display: flex; 
   justify-content:center;
+  align-content: center;
+}
+
+.buildButton{
+  padding: 15px 25px; /* Apply padding to all sides of the button */
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.houseIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.aboutLeft {
+  padding: 10px 20px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.aboutLeftTitle{
+  font-size: 2em;
+  margin-bottom: 20px;
+ 
+  color: var(--secondary-color);
+}
+
+.aboutUs {
+ 
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  max-height: 800px;
+
+  width: 85%;
+  margin: 100px auto; 
+}
+
+.aboutUsText {
+  
+  font-size: 1.12em;
+  line-height: 2;
+}
+
+.InfoImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  
+}
+
+.imageContainer {
+  width: 450px;
+  height: 550px;
+  position: relative;
+  
+}
+
+.center {
+  display: flex;
+  justify-content: center;
   align-content: center;
 }

@@ -1,5 +1,5 @@
 .wrapper {
-  min-height: 300px;
+  min-height: 320px;
   width: 80%;
   margin: 0 auto;
   display: block;
@@ -15,7 +15,7 @@
 }
 
 .projectImage {
-  height: 200px;
+  height: 280px;
   width: 100%;
 }
 
@@ -26,5 +26,6 @@
 }
 
 .projectName {
-  margin-top: 30px;
+
+  margin-left: 1em;
 }

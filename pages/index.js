@@ -65,10 +65,10 @@ export default function Home() {
             Welcome to Pridwen Construction, your premier choice for residential
             construction services in Vancouver, British Columbia, Canada. At
             Pridwen Construction, we specialize in crafting exquisite homes that
-            reflect our clients' vision and lifestyle. With a dedication to
+            reflect our clients&apos; vision and lifestyle. With a dedication to
             superior craftsmanship and attention to detail, our experienced team
             ensures that every project is completed to the highest standards of
-            quality and excellence. Whether you're seeking a custom-built home,
+            quality and excellence. Whether you&apos;re seeking a custom-built home,
             a renovation, or an addition, Pridwen Construction is committed to
             exceeding your expectations and bringing your dream home to life.
             Choose Pridwen Construction for your residential construction needs

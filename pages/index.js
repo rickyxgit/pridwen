@@ -4,7 +4,7 @@ import styles from "../styles/Index.module.css";
 
 import ProjectItem from "@/components/projectItem";
 import Footer from "@/components/Footer";
-import Image from 'next/image';
+import Image from "next/image";
 const projects = [
   {
     image: "/images/test1.jpg",
@@ -59,7 +59,6 @@ export default function Home() {
 
       <div className={styles.aboutUs}>
         <div className={styles.aboutLeft}>
-     
           <h2 className={styles.aboutLeftTitle}> A Bit About Us </h2>
           <p className={styles.aboutUsText}>
             Welcome to Pridwen Construction, your premier choice for residential
@@ -68,28 +67,26 @@ export default function Home() {
             reflect our clients&apos; vision and lifestyle. With a dedication to
             superior craftsmanship and attention to detail, our experienced team
             ensures that every project is completed to the highest standards of
-            quality and excellence. Whether you&apos;re seeking a custom-built home,
-            a renovation, or an addition, Pridwen Construction is committed to
-            exceeding your expectations and bringing your dream home to life.
-            Choose Pridwen Construction for your residential construction needs
-            and experience the difference of working with a trusted partner
-            dedicated to your satisfaction.
+            quality and excellence. Whether you&apos;re seeking a custom-built
+            home, a renovation, or an addition, Pridwen Construction is
+            committed to exceeding your expectations and bringing your dream
+            home to life. Choose Pridwen Construction for your residential
+            construction needs and experience the difference of working with a
+            trusted partner dedicated to your satisfaction.
           </p>
         </div>
 
         <div className={styles.center}>
-        <div className={styles.imageContainer}> 
-          <Image
-            src="/images/temp1.jpeg" // Specify the path to your image
-            alt="Description of the image" // Provide alternative text
-
-            width={300}
-            height={300}
-            className={styles.InfoImage}
-           
-          />
+          <div className={styles.imageContainer}>
+            <Image
+              src="/images/temp1.jpeg" // Specify the path to your image
+              alt="Description of the image" // Provide alternative text
+              width={300}
+              height={300}
+              className={styles.InfoImage}
+            />
+          </div>
         </div>
-      </div>
       </div>
       <div>
         <h2 className={styles.projectHeader}> Recent Projects</h2>

@@ -1,25 +1,25 @@
 .background {
-    margin-top: 20px;
+  margin-top: 20px;
   background-color: #222;
   padding: 0;
 }
 
 .wrapper {
-    padding: 20px;
-    display: flex;
- 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: auto auto; /* You can adjust the height of rows as needed */
+  grid-gap: 10px; /* Adjust the gap between grid items */
+  padding: 35px 0;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
 }
 
 .contact {
-    color: white;
-    font-size: 1.1em;
+  color: var(--footer-color);
+  font-size: 1.1em;
 }
 
 .info {
-    margin-top: 10px;
-    color: white;
-    font-size: 1em;
+  margin-top: 10px;
+  color: var(--footer-color);
+  font-size: 1em;
 }

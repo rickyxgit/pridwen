@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 const projects = [
   {
-    image: "/images/test1.jpg",
-    name: "Villa Aurora 5231 Burnaby, 2023",
+    image: "/images/7660 malahat ave/thumbnail.jpg",
+    name: "7660 malahat ave, 2023",
   },
   {
     image: "/images/test2.jpg",
@@ -30,11 +30,8 @@ export default function Home() {
         <div className={styles.overlay}></div>
         <div className={styles.wrapper}>
           <div>
-            <h2 className={styles.slogan}>
-              Crafting Spaces, Building Memories
-            </h2>
+            <h2 className={styles.slogan}>To Build A Piece Of Art</h2>
 
-            <h2 className={styles.slogan2}>Where Vision Meets Reality</h2>
             <div className={styles.buttonCenter}>
               <button className={styles.buildButton}>
                 <svg
@@ -88,6 +85,70 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className={styles.wrapperTC}>
+        <div>
+          <div className={styles.center}>
+            <Image
+              src="/images/award.png" // Specify the path to your image
+              alt="Description of the image" // Provide alternative text
+              width={50}
+              height={50}
+              className={styles.iconTC}
+            />
+          </div>
+          <h2 className={styles.titleTC}>FINEST QUALITY</h2>
+          <p>
+            Experience unparalleled craftsmanship with our meticulous attention
+            to detail, using only the highest quality materials to ensure
+            lasting beauty and durability in every aspect of your residential
+            construction project.
+          </p>
+        </div>
+
+        <div>
+          <div className={styles.center}>
+            <Image
+              src="/images/worker.png" // Specify the path to your image
+              alt="Description of the image" // Provide alternative text
+              width={50}
+              height={50}
+              className={styles.iconTC}
+            />
+          </div>
+          <h2 className={styles.titleTC}>TOP SERVICE</h2>
+          <p>
+            At our residential construction company, customer satisfaction is
+            our top priority. From initial consultation to project completion,
+            our dedicated team is committed to providing personalized attention,
+            clear communication, and prompt, reliable service at every step of
+            the process.
+          </p>
+        </div>
+
+        <div>
+
+        <div className={styles.center}>
+            <Image
+              src="/images/money.png" // Specify the path to your image
+              alt="Description of the image" // Provide alternative text
+              width={50}
+              height={50}
+              className={styles.iconTC}
+            />
+          </div>
+          <h2 className={styles.titleTC}>MODEST PRICE</h2>
+          <p>
+            Enjoy the best of both worlds - superior quality and top-notch
+            service at a price that wont break the bank. Our residential
+            construction services offer exceptional value, delivering
+            exceptional results without compromising on affordability.
+            Experience the luxury of high-end construction without the hefty
+            price tag.
+          </p>
+        </div>
+      </div>
+
       <div>
         <h2 className={styles.projectHeader}> Recent Projects</h2>
 

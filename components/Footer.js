@@ -32,7 +32,7 @@ export default function Footer() {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              class={styles.mail}
+              className={styles.mail}
             >
               <path
                 strokeLinecap="round"

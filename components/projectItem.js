@@ -3,9 +3,11 @@ import Link from "next/link";
 
 import styles from "../styles/components/ProjectItem.module.css";
 
-const ProjectItem = ({ image, name }) => {
+const ProjectItem = ({ image, name, id }) => {
+ 
+  const url= id;
   return (
-    <Link href={`/projects/${name}`} className={styles.wrapper}>
+    <Link href={url} className={styles.wrapper}>
       <img className={styles.projectImage} src={image} alt="Project" />
      
         <h3 className={styles.projectName}>{name}</h3>
@@ -15,3 +17,4 @@ const ProjectItem = ({ image, name }) => {
 };
 
 export default ProjectItem;
+

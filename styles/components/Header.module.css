@@ -25,7 +25,7 @@
 }
 
 .NavLink {
-  color: var(--primary-color);
+  color: var(--footer-color);
   text-decoration: none;
   padding: 10px 0;
 }

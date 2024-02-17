@@ -1,8 +1,9 @@
 const projects = [
-    { projectId: 1, numImages: 15, projectName: 'Project 1' },
-    { projectId: 2, numImages: 8, projectName: 'Project 2' },
-    { projectId: 3, numImages: 15, projectName: 'Project 3' },
+    { id: '7660 malahat ave', numImages: 16, name: '7660 malahat ave, 2023' },
+    { id: '7660 malahat ave', numImages: 8, name: 'Project 2' },
+    { id: '7660 malahat ave', numImages: 15, name: 'Project 3' },
     // Add more projects as needed
   ];
 
   export default projects;
+

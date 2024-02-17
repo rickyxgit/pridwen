@@ -5,28 +5,33 @@ import { useRouter } from "next/router";
 
 import projects from "@/public/projects";
 
+import styled from "styled-components";
+
+const Body = styled.div`
+ min-height: 100vh;
+`
+
 export default function ProjectPage() {
   const router = useRouter();
   const currentUrl = router.asPath;
-  const projectName = currentUrl.slice(1).replace(/_/g, " ");
-  const folderTitle = projectName.substring(0, projectName.length - 5);
+  const projectName = currentUrl.slice(1).replace(/%20/g, " ");
 
-  console.log(`/images/${folderTitle}/thumbnail.jpg`);
-  console.log(projects[0].numImages);
   
   const imagePaths = [];
   for (let i = 1; i <= projects[0].numImages; i++) {
-    const imagePath = `/images/${folderTitle}/image${i}.jpg`;
+    const imagePath = `/images/${projectName}/image${i}.jpg`;
     imagePaths.push(imagePath);
   }
 
   return (
     <div>
       <Header />
-      <div> {projectName}</div>
-      <div> {folderTitle}</div>
-      <Slider images={imagePaths} />
+      
+      <Body>
 
+      
+      <Slider images={imagePaths} name = {projectName}/>
+      </Body>
       <Footer />
     </div>
   );

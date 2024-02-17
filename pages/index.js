@@ -1,28 +1,10 @@
 import Header from "@/components/Header";
 import React from "react";
 import styles from "../styles/Index.module.css";
-
 import ProjectItem from "@/components/projectItem";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-const projects = [
-  {
-    image: "/images/7660 malahat ave/thumbnail.jpg",
-    name: "7660 malahat ave, 2023",
-    id: "7660_malahat_ave_2023",
-  },
-  {
-    image: "/images/test2.jpg",
-    name: "Majestic Manor 2198 Surrey, 2023",
-    id: "2",
-  },
-  {
-    image: "/images/test3.jpg",
-    name: "Elysian Estate 1882 Vancouver, 2024",
-    id: "3",
-  },
-  // Add more projects as needed
-];
+import projects from "@/public/projects";
 
 export default function Home() {
   return (
@@ -152,14 +134,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
+      <div className={styles.recentProjectWrapper}>
         <h2 className={styles.projectHeader}> Recent Projects</h2>
 
         <div className={styles.projectsGrid}>
           {projects.map((project) => (
+           
             <ProjectItem
               key={project.name}
-              image={project.image}
+              image={`/images/${project.id}/image1.jpg`}
+             
               name={project.name}
               id ={project.id}
             />

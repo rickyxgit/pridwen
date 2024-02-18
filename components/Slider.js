@@ -91,7 +91,7 @@ function MySlider({ images, name }) {
         <StyledReactSlick {...settings}>
           {images.map((image, index) => (
             <Slide key={index}>
-              <img src={image} alt={`Slide ${index + 1}`} className={styles.photo} />
+              <Image src={image} alt={`Slide ${index + 1}`} height={300} width={300} className={styles.photo} />
               <Title>{name}</Title>
             </Slide>
           ))}

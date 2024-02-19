@@ -105,16 +105,16 @@
 .InfoImage {
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-  
 }
 
 .imageContainer {
+
+  display: flex;
+  align-items: flex-end; /* Align items to the bottom */
+  height: 550px; /* Adjust the height as needed */
   width: 450px;
-  height: 550px;
-  position: relative;
-  
+  border-radius: 15px;
+  overflow: hidden; /* Hide any overflow */
 }
 
 .center {

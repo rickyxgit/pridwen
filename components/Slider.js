@@ -3,16 +3,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
-
-import Image from "next/image";
-
 import styles from "../styles/components/Slider.module.css";
 
-
+const Background = styled.div`
+  background-color: #333333;
+`
 
 const SliderContainer = styled.div`
+  width: 1280px;
   margin: 0 auto;
-  height: 900px;
+  height: 1020px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 `;
 
 const Slide = styled.div`
@@ -34,12 +36,14 @@ const Title = styled.div`
 const StyledReactSlick = styled(Slider)`
   /* Add your styling here */
   .slick-prev {
-    left: 20px;
-    z-index: 1;
+    left: 5%;
+   
+    z-index: 1; 
+   
   }
 
   .slick-next {
-    right: 40px;
+    right: 5%;
     z-index: 1;
   }
 
@@ -50,7 +54,7 @@ const StyledReactSlick = styled(Slider)`
   }
 
   .slick-track {
-    margin: auto;
+    margin: 0 auto;
   }
 
   /** dots */
@@ -86,18 +90,20 @@ function MySlider({ images, name }) {
   };
 
   return (
-    <div>
+    <Background>
+      
       <SliderContainer>
         <StyledReactSlick {...settings}>
           {images.map((image, index) => (
             <Slide key={index}>
               <img src={image} alt={`Slide ${index + 1}`}  className={styles.photo} />
+            
               <Title>{name}</Title>
             </Slide>
           ))}
         </StyledReactSlick>
       </SliderContainer>
-    </div>
+    </Background>
   );
 }
 

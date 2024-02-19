@@ -9,12 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "core-js": "3",
+    "jquery": ">=1.8.0",
     "next": "14.1.0",
+    "prop-types": "15.5.10",
     "react": "^18",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^18",
     "react-router-dom": "^6.22.0",
     "react-slick": "^0.30.2",
+    "react-switch": "^7.0.0",
+    "react-texture": "^0.0.1",
+    "react-toggle-switch": "^3.0.4",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.8",
     "swiper": "^11.0.6"

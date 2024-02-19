@@ -1,0 +1,26 @@
+.switchContainer {
+    display: flex;
+    align-items: center; /* Center vertically */
+  }
+  
+  .switchContainer .react-switch-bg,
+  .switchContainer .react-switch-handle {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+
+  
+  
+  /* Adjust the position of the circle within the switch handle */
+  .switchContainer .react-switch-handle {
+    left: calc(50% - 10px); /* Adjust position of circle */
+  }
+
+  .switchIcon {
+    display: flex;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100%; /* Ensure the icons take up full height */
+    color: var(--footer-color);
+  }

@@ -2,7 +2,14 @@ import Link from "next/link";
 import styles from "../styles/components/Header.module.css";
 import Image from "next/image";
 
+import LanguageSwitch from "./Switch";
+
+
+
+
 export default function Header() {
+  
+
   return (
     <div className={styles.StyledHeader}>
       <div className={styles.center}>
@@ -16,6 +23,7 @@ export default function Header() {
               className={styles.logo}
             />
           </Link>
+          
 
           <div className={styles.centerNav}>
             <Link className={styles.NavLink} href={"/"}>
@@ -24,6 +32,10 @@ export default function Header() {
             <Link className={styles.NavLink} href={"/projects"}>
               Projects
             </Link>
+
+            <LanguageSwitch />
+
+            
           </div>
         </div>
       </div>

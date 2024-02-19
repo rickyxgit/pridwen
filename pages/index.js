@@ -1,12 +1,31 @@
 import Header from "@/components/Header";
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styles from "../styles/Index.module.css";
 import ProjectItem from "@/components/projectItem";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import projects from "@/public/projects";
+import translations from "../locales/translations.json";
+
+import { getCurrentLanguage } from "@/components/Switch";
+
+import { LanguageProvider, useLanguage } from "@/components/LanguageContext";
 
 export default function Home() {
+  const { language } = useLanguage();
+
+  console.log("CURRENT LANGUAGE IS ", language);
+
+  const [message, setMessage] = useState("");
+
+  // Fetch message based on the selected language
+  useEffect(() => {
+    if (language === "EN") {
+      setMessage("Hello, welcome to our website!");
+    } else if (language === "CN") {
+      setMessage("你好，欢迎来到我们的网站！");
+    }
+  }, [language]);
   return (
     <div>
       <Header />
@@ -15,6 +34,8 @@ export default function Home() {
         <div className={styles.overlay}></div>
         <div className={styles.wrapper}>
           <div>
+            <div>{message}</div>
+
             <h2 className={styles.slogan}>To Build A Piece Of Art</h2>
 
             <div className={styles.buttonCenter}>
@@ -76,7 +97,7 @@ export default function Home() {
           <div className={styles.center}>
             <Image
               src="/images/award.png" // Specify the path to your image
-              alt="Description of the image" // Provide alternative text
+              alt="award image" // Provide alternative text
               width={50}
               height={50}
               className={styles.iconTC}
@@ -95,7 +116,7 @@ export default function Home() {
           <div className={styles.center}>
             <Image
               src="/images/worker.png" // Specify the path to your image
-              alt="Description of the image" // Provide alternative text
+              alt="worker image" // Provide alternative text
               width={50}
               height={50}
               className={styles.iconTC}
@@ -112,11 +133,10 @@ export default function Home() {
         </div>
 
         <div>
-
-        <div className={styles.center}>
+          <div className={styles.center}>
             <Image
               src="/images/money.png" // Specify the path to your image
-              alt="Description of the image" // Provide alternative text
+              alt="money image" // Provide alternative text
               width={50}
               height={50}
               className={styles.iconTC}
@@ -139,17 +159,16 @@ export default function Home() {
 
         <div className={styles.projectsGrid}>
           {projects.map((project) => (
-           
             <ProjectItem
               key={project.name}
               image={`/images/${project.id}/image1.jpg`}
-             
               name={project.name}
-              id ={project.id}
+              id={project.id}
             />
           ))}
         </div>
       </div>
+
       <Footer />
     </div>
   );

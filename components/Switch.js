@@ -26,15 +26,12 @@ const MySwitch = () => {
   const getCurrentLanguage = () => {
     return language;
   };
-
   const handleToggle = (checked) => {
     setLanguage(checked ? 'CN' : 'EN');
   };
   */
 
-  function test() {
-
-  }
+ 
   const { language, toggleLanguage } = useLanguage();
 
   return (

@@ -5,27 +5,35 @@ import ProjectItem from "@/components/projectItem";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import projects from "@/public/projects";
-import translations from "../locales/translations.json";
 
-import { getCurrentLanguage } from "@/components/Switch";
 
-import { LanguageProvider, useLanguage } from "@/components/LanguageContext";
+import chinese from "/locales/cn.json";
+import english from "/locales/en.json";
+import {  useLanguage} from "@/components/LanguageContext";
 
 export default function Home() {
-  const { language } = useLanguage();
+
+  const {language} = useLanguage();
+
+  const [translations, setTranslations] = useState(english);
+
 
   console.log("CURRENT LANGUAGE IS ", language);
 
+  
   const [message, setMessage] = useState("");
 
   // Fetch message based on the selected language
   useEffect(() => {
     if (language === "EN") {
-      setMessage("Hello, welcome to our website!");
+      setTranslations(english);
     } else if (language === "CN") {
-      setMessage("你好，欢迎来到我们的网站！");
+      setTranslations(chinese);
+     
     }
   }, [language]);
+
+  
   return (
     <div>
       <Header />
@@ -35,7 +43,8 @@ export default function Home() {
         <div className={styles.wrapper}>
           <div>
             <div>{message}</div>
-
+          
+            
             <h2 className={styles.slogan}>To Build A Piece Of Art</h2>
 
             <div className={styles.buttonCenter}>
@@ -64,18 +73,7 @@ export default function Home() {
         <div className={styles.aboutLeft}>
           <h2 className={styles.aboutLeftTitle}> A Bit About Us </h2>
           <p className={styles.aboutUsText}>
-            Welcome to Pridwen Construction, your premier choice for residential
-            construction services in Vancouver, British Columbia, Canada. At
-            Pridwen Construction, we specialize in crafting exquisite homes that
-            reflect our clients&apos; vision and lifestyle. With a dedication to
-            superior craftsmanship and attention to detail, our experienced team
-            ensures that every project is completed to the highest standards of
-            quality and excellence. Whether you&apos;re seeking a custom-built
-            home, a renovation, or an addition, Pridwen Construction is
-            committed to exceeding your expectations and bringing your dream
-            home to life. Choose Pridwen Construction for your residential
-            construction needs and experience the difference of working with a
-            trusted partner dedicated to your satisfaction.
+            {translations.aboutUs.text}
           </p>
         </div>
 
@@ -105,10 +103,7 @@ export default function Home() {
           </div>
           <h2 className={styles.titleTC}>FINEST QUALITY</h2>
           <p>
-            Experience unparalleled craftsmanship with our meticulous attention
-            to detail, using only the highest quality materials to ensure
-            lasting beauty and durability in every aspect of your residential
-            construction project.
+            {translations.TC.quality}
           </p>
         </div>
 
@@ -124,11 +119,7 @@ export default function Home() {
           </div>
           <h2 className={styles.titleTC}>TOP SERVICE</h2>
           <p>
-            At our residential construction company, customer satisfaction is
-            our top priority. From initial consultation to project completion,
-            our dedicated team is committed to providing personalized attention,
-            clear communication, and prompt, reliable service at every step of
-            the process.
+          {translations.TC.service}
           </p>
         </div>
 
@@ -144,12 +135,7 @@ export default function Home() {
           </div>
           <h2 className={styles.titleTC}>MODEST PRICE</h2>
           <p>
-            Enjoy the best of both worlds - superior quality and top-notch
-            service at a price that wont break the bank. Our residential
-            construction services offer exceptional value, delivering
-            exceptional results without compromising on affordability.
-            Experience the luxury of high-end construction without the hefty
-            price tag.
+          {translations.TC.price}
           </p>
         </div>
       </div>

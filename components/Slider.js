@@ -1,21 +1,11 @@
-import React, { component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import styles from "../styles/components/Slider.module.css";
 
-const Background = styled.div`
-  background-color: #333333;
-`
 
-const SliderContainer = styled.div`
-  width: 1280px;
-  margin: 0 auto;
-  height: 1020px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-`;
 
 const Slide = styled.div`
   position: relative;
@@ -35,6 +25,7 @@ const Title = styled.div`
 
 const StyledReactSlick = styled(Slider)`
   /* Add your styling here */
+  /**
   .slick-prev {
     left: 5%;
    
@@ -46,7 +37,8 @@ const StyledReactSlick = styled(Slider)`
     right: 5%;
     z-index: 1;
   }
-
+  */
+  
   .slick-prev:before,
   .slick-next:before {
     color: var(--primary-color);
@@ -90,9 +82,9 @@ function MySlider({ images, name }) {
   };
 
   return (
-    <Background>
+    <div>
       
-      <SliderContainer>
+      <div>
         <StyledReactSlick {...settings}>
           {images.map((image, index) => (
             <Slide key={index}>
@@ -102,8 +94,8 @@ function MySlider({ images, name }) {
             </Slide>
           ))}
         </StyledReactSlick>
-      </SliderContainer>
-    </Background>
+      </div>
+    </div>
   );
 }
 

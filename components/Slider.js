@@ -7,15 +7,16 @@ import styles from "../styles/components/Slider.module.css";
 
 
 
+
 const Slide = styled.div`
   position: relative;
 `;
 
 const Title = styled.div`
   position: absolute;
-  top: 10px; 
-  left: 10px; 
-  color: white; 
+  top: 10px;
+  left: 10px;
+  color: white;
   font-size: 2.3em;
 
   padding: 20px;
@@ -23,11 +24,19 @@ const Title = styled.div`
   border-radius: 15px;
 `;
 
+const SliderContainer = styled.div`
+  width: 1280px;
+  margin: 0 auto;
+  height: 1020px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+`;
+
 const StyledReactSlick = styled(Slider)`
   /* Add your styling here */
-  /**
+  
   .slick-prev {
-    left: 5%;
+    left: 4%;
    
     z-index: 1; 
    
@@ -37,8 +46,8 @@ const StyledReactSlick = styled(Slider)`
     right: 5%;
     z-index: 1;
   }
-  */
   
+
   .slick-prev:before,
   .slick-next:before {
     color: var(--primary-color);
@@ -82,20 +91,23 @@ function MySlider({ images, name }) {
   };
 
   return (
-    <div>
-      
+    <SliderContainer>
       <div>
         <StyledReactSlick {...settings}>
           {images.map((image, index) => (
             <Slide key={index}>
-              <img src={image} alt={`Slide ${index + 1}`}  className={styles.photo} />
-            
+              <img
+                src={image}
+                alt={`Slide ${index + 1}`}
+                className={styles.photo}
+              />
+
               <Title>{name}</Title>
             </Slide>
           ))}
         </StyledReactSlick>
       </div>
-    </div>
+    </SliderContainer>
   );
 }
 

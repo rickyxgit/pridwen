@@ -1,13 +1,11 @@
 .photo {
     width: 1280px;
     height: 960px;
-    
-    
     margin: 0 auto;
 }
 
 .SliderContainer {
-    width: 1280px;
+  width: 1280px;
   margin: 0 auto;
   height: 1020px;
   padding-bottom: 30px;

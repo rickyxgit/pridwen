@@ -9,6 +9,119 @@
   background-position: center;
 }
 
+.spacer {
+  margin-top: 30px;
+}
+
+.body {
+
+
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: auto;
+ 
+}
+
+
+
+.titleCenter {
+  margin-top: 40px;
+  text-align: center;
+  width: 70%;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #165b8f;
+}
+
+.textCenter {
+  text-align: center;
+  width: 70%;
+  font-size: 21px;
+  margin-bottom: 40px;
+}
+
+.imageContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between; /* or space-around/center based on your preference */
+  align-items: center; /* vertically center the images if needed */
+  gap: 10px; /* Add a 10px gap between the images */
+  
+}
+
+.imageContainer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoImage {
+  flex: 1; /* This will make each image take equal space */
+  max-width: calc(50% - 5px);
+  object-fit: cover;
+}
+
+.displayImage1 {
+
+
+  
+  object-fit: cover; /* Ensure the image covers the entire image wrapper */
+
+}
+
+
+.parentContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+
+.container {
+  width: 390px; /* Set the width of the container */
+  height: 295px; /* Set the height of the container */
+}
+
+.imageWrapper {
+  background-image: url('../public/images/laneway\ house/image1.jpg');
+  background-size: contain; /* Ensure the image covers the entire container */
+  
+  width: 100%; /* Set the width of the image wrapper */
+  height: 100%; /* Set the height of the image wrapper */
+}
+
+
+.container2 {
+  width: 222px; /* Set the width of the container */
+  height: 295px; /* Set the height of the container */
+}
+
+.imageWrapper2 {
+  background-image: url('../public/images/laneway\ house/image6.jpg');
+  background-size: contain; /* Ensure the image covers the entire container */
+  
+  width: 100%; /* Set the width of the image wrapper */
+  height: 100%; /* Set the height of the image wrapper */
+}
+
+
+.container3 {
+  width: 392px; /* Set the width of the container */
+  height: 295px; /* Set the height of the container */
+}
+
+.imageWrapper3 {
+  background-image: url('../public/images/laneway\ house/image7.jpg');
+  background-size: contain; /* Ensure the image covers the entire container */
+  
+  width: 100%; /* Set the width of the image wrapper */
+  height: 100%; /* Set the height of the image wrapper */
+}
+
 .wrapper {
 }
 
@@ -102,20 +215,8 @@
   line-height: 2;
 }
 
-.InfoImage {
-  height: 100%;
-  width: 100%;
-}
 
-.imageContainer {
 
-  display: flex;
-  align-items: flex-end; /* Align items to the bottom */
-  height: 550px; /* Adjust the height as needed */
-  width: 450px;
-  border-radius: 15px;
-  overflow: hidden; /* Hide any overflow */
-}
 
 .center {
   display: flex;
@@ -136,8 +237,10 @@
 }
 
 .titleTC {
-  color: var(--gold);
+  color: #165b8f;
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .iconTC {
@@ -148,4 +251,9 @@
 
 .recentProjectWrapper {
   margin-bottom: 30px;
+}
+
+.smallerTextCenter {
+  text-align: center;
+  font-size: 19px;
 }

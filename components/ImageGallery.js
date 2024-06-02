@@ -33,7 +33,7 @@ import laneway4 from "../public/images/laneway house at w 22nd and Blenheim/imag
 import laneway5 from "../public/images/laneway house at w 22nd and Blenheim/image5.jpg";
 import laneway6 from "../public/images/laneway house at w 22nd and Blenheim/image6.jpg";
 import laneway7 from "../public/images/laneway house at w 22nd and Blenheim/image7.jpg";
-
+/** 
 const malahat = [
   "../public/images/7660 malahat ave/image1.jpg",
   image2,

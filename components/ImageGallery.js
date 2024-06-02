@@ -62,7 +62,7 @@ const laneway = [
   laneway6,
   laneway7,
 ];
-
+*/
 function ImageGallery({ name, images }) {
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);

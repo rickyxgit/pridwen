@@ -29,8 +29,11 @@ export default function ProjectPage() {
     case "Dunbar and w 32nd":
       projectIndex = 2; 
       break;
+    case "7660 Malahat ave":
+      projectIndex = 0;
+      break; 
     default:
-      projectIndex = 0; 
+    
   }
 
   const imagePaths = [];
@@ -39,6 +42,8 @@ export default function ProjectPage() {
     const imagePath = `/images/${projectName}/image${i}.jpg`;
     imagePaths.push(imagePath);
   }
+
+  console.log(projectIndex);
 
   return (
     <div>

@@ -4,6 +4,7 @@ import "yet-another-react-lightbox/styles.css";
 import styles from "../styles/components/ImageGallery.module.css";
 
 //import image1 from "../public/images/7660 malahat ave/image1.jpg";
+/** 
 const image1 = "../public/images/7660 malahat ave/image1.jpg";
 import image2 from "../public/images/7660 malahat ave/image2.jpg";
 import image3 from "../public/images/7660 malahat ave/image3.jpg";
@@ -33,6 +34,7 @@ import laneway4 from "../public/images/laneway house at w 22nd and Blenheim/imag
 import laneway5 from "../public/images/laneway house at w 22nd and Blenheim/image5.jpg";
 import laneway6 from "../public/images/laneway house at w 22nd and Blenheim/image6.jpg";
 import laneway7 from "../public/images/laneway house at w 22nd and Blenheim/image7.jpg";
+*/
 /** 
 const malahat = [
   "../public/images/7660 malahat ave/image1.jpg",

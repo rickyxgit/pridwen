@@ -3,7 +3,8 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import styles from "../styles/components/ImageGallery.module.css";
 
-import image1 from "../public/images/7660 malahat ave/image1.jpg";
+//import image1 from "../public/images/7660 malahat ave/image1.jpg";
+const image1 = "../public/images/7660 malahat ave/image1.jpg";
 import image2 from "../public/images/7660 malahat ave/image2.jpg";
 import image3 from "../public/images/7660 malahat ave/image3.jpg";
 import image4 from "../public/images/7660 malahat ave/image4.jpg";
@@ -34,7 +35,7 @@ import laneway6 from "../public/images/laneway house at w 22nd and Blenheim/imag
 import laneway7 from "../public/images/laneway house at w 22nd and Blenheim/image7.jpg";
 
 const malahat = [
-  image1,
+  "../public/images/7660 malahat ave/image1.jpg",
   image2,
   image3,
   image4,
@@ -62,7 +63,7 @@ const laneway = [
   laneway7,
 ];
 
-function ImageGallery({ name }) {
+function ImageGallery({ name, images }) {
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -71,6 +72,7 @@ function ImageGallery({ name }) {
     setOpen(true);
   };
 
+  /** 
   let images;
 
   switch (name) {
@@ -85,6 +87,9 @@ function ImageGallery({ name }) {
       break;
     default:
   }
+  */
+
+  const imagesWithSrc = images.map(image => ({ src: image }));
 
   return (
     <div>
@@ -97,7 +102,7 @@ function ImageGallery({ name }) {
               className={styles.galleryItem}
               onClick={() => handleOpen(index)}
             >
-              <img src={image.src} alt="1" className={styles.galleryImg} />
+              <img src={image} alt="1" className={styles.galleryImg} />
             </div>
           ))}
         </div>
@@ -107,7 +112,7 @@ function ImageGallery({ name }) {
         <Lightbox
           open={open}
           close={() => setOpen(false)}
-          slides={images}
+          slides={imagesWithSrc}
           index={currentIndex}
           animation={{ fade: 300 }}
           caption={{

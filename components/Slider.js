@@ -90,6 +90,8 @@ function MySlider({ images, name }) {
     autoplaySpeed: 2000 * 5,
   };
 
+ 
+
   return (
     <SliderContainer>
       <div>

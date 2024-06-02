@@ -10,6 +10,8 @@ import chinese from "/locales/cn.json";
 import english from "/locales/en.json";
 import { useLanguage } from "@/components/LanguageContext";
 
+import ImageGallery from "@/components/ImageGallery";
+
 export default function Home() {
   const { language } = useLanguage();
 
@@ -111,7 +113,7 @@ export default function Home() {
                 className={styles.iconTC}
               />
             </div>
-            <h2 className={styles.titleTC}>MODEST PRICE</h2>
+            <h2 className={styles.titleTC}>EXCEPTIONAL PRICE</h2>
             <p className={styles.smallerTextCenter}>{translations.TC.price}</p>
           </div>
         </div>
@@ -131,6 +133,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
 
       <Footer />
     </div>

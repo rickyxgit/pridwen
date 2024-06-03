@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-const Forum = () => {
+const Form = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -63,4 +63,4 @@ const Forum = () => {
   );
 };
 
-export default Forum;
+export default Form;

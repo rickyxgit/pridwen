@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import projects from "@/public/projects";
 
-import Forum from "@/components/forum";
+import Form from "@/components/Form";
 
 import chinese from "/locales/cn.json";
 import english from "/locales/en.json";
@@ -134,7 +134,7 @@ export default function Home() {
         </div>
       </div>
             <div>TESTING IN PROGRESS</div>
-      <Forum />
+      <Form />
 
       <Footer />
     </div>

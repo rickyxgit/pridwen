@@ -1,0 +1,31 @@
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Adjusted */
+  grid-gap: 1px;
+  width: 95%; /* Adjust max-width if needed */
+  margin: 0 auto; /* Center the grid */
+}
+
+.projectHeader {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 50px;
+
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recentProjectWrapper {
+  margin-bottom: 30px;
+}
+
+.body {
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+}

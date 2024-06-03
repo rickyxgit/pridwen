@@ -6,11 +6,11 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import projects from "@/public/projects";
 
+import Forum from "@/components/forum";
+
 import chinese from "/locales/cn.json";
 import english from "/locales/en.json";
 import { useLanguage } from "@/components/LanguageContext";
-
-import ImageGallery from "@/components/ImageGallery";
 
 export default function Home() {
   const { language } = useLanguage();
@@ -133,7 +133,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+            <div>TESTING IN PROGRESS</div>
+      <Forum />
 
       <Footer />
     </div>

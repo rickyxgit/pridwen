@@ -28,6 +28,7 @@
   color: var(--footer-color);
   text-decoration: none;
   padding: 10px 0;
+  font-size: 20px;
 }
 
 
@@ -36,4 +37,40 @@
   width: 140px;
   height: 68px;
 }
+
+
+.center {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 80%;
+}
+
+.StyledHeader {
+  background-color: #222;
+  padding: 0;
+}
+
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.centerNav {
+  display: flex;
+  gap: 15px;
+}
+
+.NavLink {
+  color: var(--footer-color);
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.logo {
+  width: 140px;
+  height: 68px;
+}
+
 

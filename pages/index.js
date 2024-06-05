@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import projects from "@/public/projects";
 
-import Form from "@/components/Form";
+
 
 import chinese from "/locales/cn.json";
 import english from "/locales/en.json";
@@ -17,10 +17,7 @@ export default function Home() {
 
   const [translations, setTranslations] = useState(english);
 
-  console.log("CURRENT LANGUAGE IS ", language);
-
   const [message, setMessage] = useState("");
-
   // Fetch message based on the selected language
   useEffect(() => {
     if (language === "EN") {
@@ -49,7 +46,7 @@ export default function Home() {
             alt="Description of the image" // Provide alternative text
             width={500}
             height={450}
-            className={styles.InfoImage}
+            className={styles.infoImage2}
           />
         </div>
 
@@ -133,9 +130,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-            <div>TESTING IN PROGRESS</div>
-      <Form />
-
+          
       <Footer />
     </div>
   );

@@ -29,3 +29,26 @@
     width: 80%;
     margin: auto;
 }
+
+@media (max-width: 1000px) {
+  .body {
+    width: 98%;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .body {
+    width: 90%;
+  }
+  .projectsGrid {
+    grid-template-columns: 1fr; /* Set to a single column on smaller screens */
+    width: 100%; /* Take up full width */
+    grid-gap: 15px;
+  }
+
+  .projectHeader {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+}

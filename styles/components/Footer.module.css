@@ -62,3 +62,43 @@
   display: flex; 
   align-items: center; 
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    padding: 10px 5px;
+    text-align: center;
+  }
+
+  .contact {
+    font-size: 1em;
+  }
+
+  .info {
+    font-size: 0.9em;
+  }
+
+  .icon {
+    width: 55px;
+    height: 38px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .iconHomeowner {
+    width: 130px;
+    height: 35px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .contactIconWrapper {
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .phone, .mail {
+    width: 16px;
+    height: 16px;
+  }
+}

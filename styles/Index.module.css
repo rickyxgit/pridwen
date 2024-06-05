@@ -4,7 +4,6 @@
 }
 
 .body {
-
   max-width: 1000px;
   display: flex;
   flex-direction: column;
@@ -12,10 +11,7 @@
   align-items: center; /* Center vertically */
   margin: auto;
   margin-top: 50px;
- 
 }
-
-
 
 .titleCenter {
   margin-top: 40px;
@@ -106,27 +102,6 @@
   height: 100%; /* Set the height of the image wrapper */
 }
 
-.wrapper {
-}
-
-.slogan {
-    color:var(--gold);
-    font-size: 1.8em;
-    position: relative;
-    text-align: center; 
-    margin-bottom: 10px; 
-}
-
-.slogan::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 3px; /* Adjust thickness of underline */
-    background-color: var(--primary-color); /* Adjust color of underline */
-    margin-top: 5px; /* Adjust distance from text */
-}
 
 .projectsGrid {
   display: grid;
@@ -151,17 +126,6 @@
   align-content: center;
 }
 
-.buildButton{
-  padding: 15px 25px; /* Apply padding to all sides of the button */
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  text-align: center;
-  font-size: 1.2em;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
-}
 
 .houseIcon {
   width: 24px;
@@ -213,6 +177,7 @@
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 20px;
 }
 
 .iconTC {
@@ -228,4 +193,100 @@
 .smallerTextCenter {
   text-align: center;
   font-size: 19px;
+}
+
+@media (max-width: 768px) {
+  .body {
+    max-width: 95%;
+    margin-top: 5px;
+    padding: 0 10px;
+  }
+
+  .titleCenter {
+    width: 90%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .textCenter {
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .imageContainer {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .infoImage {
+    width: 600px;
+    height: 400px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .infoImage2 {
+    display: none;
+  }
+
+ 
+
+  .parentContainer {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 5px;
+  }
+
+  .container, .container2, .container3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutUs {
+    grid-template-columns: 1fr;
+    max-height: none;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .wrapperTC {
+    grid-template-columns: 1fr;
+  }
+
+  .buttonCenter {
+    flex-direction: column;
+  }
+
+  .buildButton {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .slogan {
+    font-size: 1.5em;
+  }
+
+  .aboutUsText {
+    font-size: 1em;
+  }
+
+  .logoImage {
+    width: 80px;
+  }
+
+  .iconTC {
+    height: 60px;
+    width: 60px;
+  }
+
+  .smallerTextCenter {
+    font-size: 16px;
+  }
 }

@@ -9,8 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.19",
+    "@mui/material": "^5.15.19",
     "core-js": "3",
     "emailjs-com": "^3.2.0",
+    "formik": "^2.4.6",
     "jquery": ">=1.8.0",
     "next": "^14.1.2",
     "prop-types": "15.5.10",
@@ -25,7 +30,8 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.8",
     "swiper": "^11.0.6",
-    "yet-another-react-lightbox": "^3.19.0"
+    "yet-another-react-lightbox": "^3.19.0",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "eslint": "^8",

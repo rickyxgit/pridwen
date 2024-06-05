@@ -1,7 +1,8 @@
 {
   "header": {
-    "home": "home",
-    "projects": "projects"
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact Us"
   },
 
   "aboutUs": {

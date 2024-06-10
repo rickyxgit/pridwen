@@ -45,7 +45,7 @@ const MySwitch = () => {
         onColor="#1f82cc" // Customize color when checked
         offColor="#165b8f" // Customize color when unchecked
         height={24} // Adjust the height as needed
-        width={65} // Adjust the width as needed
+        width={60} // Adjust the width as needed
         className={styles.switch} // Apply additional styling using CSS modules
       />
       <div>

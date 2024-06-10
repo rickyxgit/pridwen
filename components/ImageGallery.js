@@ -26,7 +26,7 @@ function ImageGallery({ name, images }) {
               className={styles.galleryItem}
               onClick={() => handleOpen(index)}
             >
-              <img src={image} alt="1" className={styles.galleryImg} />
+              <img src={image} alt="image of construction"  loading="lazy" className={styles.galleryImg} />
             </div>
           ))}
         </div>

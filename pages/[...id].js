@@ -23,14 +23,24 @@ export default function ProjectPage() {
 
   //selecting project
   switch (projectName) {
-    case "Laneway house at w 22nd and Blenhiem":
+    case "3276 w 22nd ave Vancouver":
       projectIndex = 1;
       break;
-    case "Dunbar and w 32nd":
+    case "3576 w 32nd ave Vancouver":
       projectIndex = 2; 
       break;
-    case "7660 Malahat ave":
+    case "7660 Malahat ave Richmond":
       projectIndex = 0;
+      break; 
+    case "78 East 51st ave Vancouver":
+      projectIndex = 3; 
+      break;
+    case "9871 Pinewell Cresent Richmond":
+      projectIndex = 4;
+      break; 
+
+    case "6515 Leibly ave Burnaby":
+      projectIndex = 5;
       break; 
     default:
     

@@ -33,44 +33,90 @@
 
 
 
+
 .logo {
   width: 140px;
   height: 68px;
 }
 
 
-.center {
-  margin: 0 auto;
-  padding: 0 10px;
-  width: 80%;
+
+
+
+
+.reorder {
+  font-size: 35px;
+  color: white;
+  border-radius: 50%; /* Optional: makes the background circular */
+  padding: 5px; /* Optional: adds some padding around the icon */
 }
 
-.StyledHeader {
-  background-color: #222;
-  padding: 0;
-}
 
-.Wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 0;
-}
 
-.centerNav {
-  display: flex;
-  gap: 15px;
-}
 
 .NavLink {
-  color: var(--footer-color);
+  margin: 0 10px;
   text-decoration: none;
-  padding: 10px 0;
-  font-size: 20px;
+
+  font-weight: bold;
 }
 
-.logo {
-  width: 140px;
-  height: 68px;
+.HamburgerMenu {
+  margin-left: 10px; /* Add margin to create space between the button and the dropdown */
+  background-color: #222;
+  border: none; /* Remove any default border */
+  outline: none; /* Remove the outline */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 50%; /* Optional: make the button circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
 }
 
+.mobileNav {
+  position: relative;
+}
 
+.dropdownMenu {
+  position: absolute;
+  top: 60px; /* Adjust the distance from the button as needed */
+  right: -14px;
+  z-index: 1000; /* Adjust the z-index if needed */
+  
+}
+
+@media (min-width: 768px) {
+  .mobileNav {
+    display: none; /* Hide the mobile nav on larger screens */
+  }
+
+  
+}
+
+@media (max-width: 767px) {
+  .desktopNav {
+    display: none; /* Hide the desktop nav on smaller screens */
+  }
+
+  .logo {
+    width: 84px;
+    height: 45px;
+   
+  }
+
+  .center {
+    margin: 0 auto;
+    padding: 0 5px;
+    width: 95%;
+  }
+
+  .centerNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  
+  }
+ 
+}

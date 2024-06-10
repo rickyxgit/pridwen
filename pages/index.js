@@ -6,11 +6,12 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import projects from "@/public/projects";
 
-
-
 import chinese from "/locales/cn.json";
 import english from "/locales/en.json";
 import { useLanguage } from "@/components/LanguageContext";
+
+import ReactPlayer from 'react-player';
+
 
 export default function Home() {
   const { language } = useLanguage();
@@ -32,6 +33,16 @@ export default function Home() {
       <Header />
 
       <div className={styles.body}>
+
+      <ReactPlayer
+        url="https://www.youtube.com/watch?v=JbXfL-oRXPc" // Replace with your video URL
+        controls // Show video controls (play, pause, etc.)
+        width="100%" // Set video width
+        height="600px" // Set video height
+      />
+
+
+
         <div className={styles.imageContainer}>
           <Image
             src="/images/7660 malahat ave/image14.jpg" // Specify the path to your image

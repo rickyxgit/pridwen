@@ -39,7 +39,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className={styles.body}>
       <h1>Contact Us</h1>
       <Formik
         initialValues={initialValues}

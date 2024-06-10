@@ -45,7 +45,7 @@ export default function Home() {
 
         <div className={styles.imageContainer}>
           <Image
-            src="/images/7660 malahat ave/image14.jpg" // Specify the path to your image
+            src="/images/7660 malahat ave Richmond/image14.jpg" // Specify the path to your image
             alt="Description of the image" // Provide alternative text
             width={500}
             height={450}
@@ -53,7 +53,7 @@ export default function Home() {
           />
 
           <Image
-            src="/images/7660 malahat ave/image9.jpg" // Specify the path to your image
+            src="/images/7660 malahat ave Richmond/image9.jpg" // Specify the path to your image
             alt="Description of the image" // Provide alternative text
             width={500}
             height={450}
